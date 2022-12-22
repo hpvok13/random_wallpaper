@@ -18,6 +18,7 @@ def getRandomFrame(folderPath='./videos/'):
     return None
 
 if __name__ == '__main__':
+    random.seed()
     for _ in range(10):
         frame = getRandomFrame()
         if (frame is not None) and (frame.mean() > 10):
