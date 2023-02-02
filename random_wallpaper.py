@@ -26,3 +26,4 @@ if __name__ == '__main__':
             filepath = os.path.abspath('to_set.png')
             SPI_SETDESKWALLPAPER = 20 
             ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, filepath , 0)
+            break
